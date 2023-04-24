@@ -96,6 +96,6 @@ public class Search extends Fragment implements SearchAdapter.OnSearchItemClickL
         NavController controller = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
         Bundle bundle = new Bundle();
         bundle.putInt("novelId", item.getNovelId());
-        controller.navigate(R.id.browse_fragment_to_details, bundle);
+        controller.navigate(R.id.search_fragment_to_details, bundle);
     }
 }

@@ -15,11 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/BaseTheme"
         tools:targetApi="33">
-
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.reader.ReaderActivity"
             android:exported="false" />
-
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true"
@@ -30,7 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
