@@ -68,4 +68,5 @@ public class Browse extends Fragment implements NovelAdapter.OnNovelItemClickLis
         bundle.putInt("novelId", item.getNovelId());
         controller.navigate(R.id.browse_fragment_to_details, bundle);
     }
+    
 }

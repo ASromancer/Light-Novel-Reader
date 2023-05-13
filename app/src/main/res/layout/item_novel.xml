@@ -39,6 +39,4 @@
             android:textColor="?colorOnSurface"
             android:textSize="@dimen/text_big" />
     </RelativeLayout>
-
-
 </layout>

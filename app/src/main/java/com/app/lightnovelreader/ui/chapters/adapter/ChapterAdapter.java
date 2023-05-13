@@ -49,7 +49,6 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.MyViewHo
         public MyViewHolder(@NonNull ItemChapterBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
-
             binding.chapterItemLayout.setOnClickListener(v ->
                     listener.onChapterItemClick(items.get(getAdapterPosition())));
         }

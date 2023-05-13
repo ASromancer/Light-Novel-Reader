@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="statusBarColor">#bfbfbf</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="accent">#f52c56</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#8692f7</color>
+    <color name="light_grey_bg">#F9FAFC</color>
+    <color name="_bg__home_page_ek2_color">#F9FAFC</color>
+    <color name="ellipse_2_color">#D8D8D8</color>
+    <color name="ellipse_3_color">#F67415</color>
+    <color name="___2100_color">#000000</color>
+    <color name="_1780_color">#565151</color>
+    <color name="meat_color">#FFFFFF</color>
+    <color name="rectangle_2_color">#2BB0FB</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4141</color>
+    <color name="colorAccentLight">#FF7474</color>
+    <color name="green">#00C853</color>
+    <color name="drawer_icon_color">#000000</color>
+    <color name="material_drawer_selected">#40FF7900</color>
+    <color name="material_drawer_selected_text">#FF6238</color>
+    <color name="colorAccent1">#FF6238</color>
+    <color name="white20">#33FFFFFF</color>
+    <color name="captionColor">#555555</color>
+    <color name="colorAccentLight1">#BFFF4141</color>
+    <color name="shimmerColor">#BCBCBC</color>
+    <color name="disabledColor">#A6A6A6</color>
+    <color name="g_black">#33405f</color>
 </resources>

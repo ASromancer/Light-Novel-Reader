@@ -9,64 +9,65 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:padding="10dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ui"
-                android:textSize="@dimen/text_med"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
-
             <LinearLayout
-                android:id="@+id/theme_mode_view"
+                android:id="@+id/btn_change_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="horizontal"
-                android:visibility="gone">
+                android:gravity="center_vertical"
+                android:paddingRight="8dp">
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/auto_chip"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_change_password" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/automatic"
-                    app:chipIcon="@drawable/ic_theme_mode_auto" />
+                    android:layout_marginLeft="20dp"
+                    android:text="Change Password"
+                    android:textSize="15sp" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/night_chip"
+                <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/dark"
-                    app:chipIcon="@drawable/ic_theme_mode_night" />
-
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/light_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/light"
-                    app:chipIcon="@drawable/ic_theme_mode_light" />
-
+                    android:layout_weight="1" />
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/info"
-                android:textSize="@dimen/text_med"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                android:gravity="center_vertical"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Log out"
+                    android:textSize="15sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

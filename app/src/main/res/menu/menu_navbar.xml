@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/browse_fragment"
-        android:icon="@drawable/ic_browse"
-        android:title="@string/nav_browse" />
-
-    <item
         android:id="@+id/search_fragment"
         android:icon="@drawable/ic_search"
         android:title="@string/search" />
@@ -15,6 +10,11 @@
         android:id="@+id/explore_fragment"
         android:icon="@drawable/ic_explore"
         android:title="@string/nav_explore" />
+
+    <item
+        android:id="@+id/browse_fragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite" />
 
     <item
         android:id="@+id/settings_fragment"

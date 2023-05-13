@@ -26,8 +26,15 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Details extends Fragment {
     private DetailsViewModel viewModel;
@@ -36,7 +43,7 @@ public class Details extends Fragment {
     private LinearProgressIndicator progress;
     private ImageView ivNovelCover;
     private TextView tvNovelName, tvAuthor, tvStatus, tvGenre, tvDescription;
-    private Button btnReadChapter;
+    private Button btnReadChapter, btnFavorite;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +66,7 @@ public class Details extends Fragment {
         tvGenre = view.findViewById(R.id.detail_genre);
         tvDescription = view.findViewById(R.id.detail_description);
         btnReadChapter = view.findViewById(R.id.read_chapter);
+        btnFavorite = view.findViewById(R.id.btn_favorite);
         setUpListeners();
         setUpObservers();
         return view;
@@ -66,7 +74,23 @@ public class Details extends Fragment {
 
     private void setUpListeners() {
         btnReadChapter.setOnClickListener(v -> navigateToChapterList());
+        btnFavorite.setOnClickListener(v -> addToFavorite(novelId));
+        getFavoriteList();
         progress.show();
+    }
+
+    private void getFavoriteList() {
+
+    }
+
+    private void addToFavorite(int novelId) {
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        String uid = mAuth.getCurrentUser().getUid();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        DocumentReference docRef = db.collection("User").document(uid);
+        Map<String, Object> newData = new HashMap<>();
+        newData.put("favorite", FieldValue.arrayUnion(novelId));
+        docRef.update(newData);
     }
 
     private void setUpObservers() {

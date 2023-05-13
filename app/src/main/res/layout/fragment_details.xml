@@ -76,6 +76,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?colorOnSurfaceVariant" />
 
+
                     <TextView
                         android:id="@+id/year"
                         android:layout_width="match_parent"
@@ -86,11 +87,20 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/btn_favorite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/baseline_favorite_border_24"
+                android:layout_below="@id/header_layout">
+            </Button>
+
             <TextView
                 android:id="@+id/detail_genre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/header_layout"
+                android:layout_below="@id/btn_favorite"
                 android:layout_marginHorizontal="10dp"
                 app:chipSpacingHorizontal="5dp"
                 app:chipSpacingVertical="-10dp" />
